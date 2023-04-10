@@ -65,14 +65,16 @@ after deleting the index will be lost; for example i have deleted miccu(having i
 +----+--------------+---------+---------+------------+
 
                                                       Data in Like table
-
-
-
-
-
-
-
-
++----+--------------+---------+---------+------------+
+| id | like_dislike | user_id | post_id | comment_id |
++----+--------------+---------+---------+------------+
+|  1 | like         |       1 |       1 |       NULL |
+|  2 | like         |       1 |    NULL |          2 |
+|  3 | like         |       3 |    NULL |          2 |
+|  4 | dislike      |       1 |    NULL |          1 |
+|  5 | dislike      |       5 |    NULL |          1 |
++----+--------------+---------+---------+------------+
+5 rows in set (0.00 sec)
 
 
 All the post of user;
